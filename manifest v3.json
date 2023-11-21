@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "YouTube Tom Scottify",
-    "version": "1.0",
+    "version": "1.1",
     "icons": {
         "16": "icons/icon-16.png",
         "32": "icons/icon-32.png",
@@ -20,7 +20,8 @@
     }],
     "web_accessible_resources": [{
         "resources": [
-            "images/*.png"
+            "images/*.png",
+            "images/*.json"
         ],
         "matches": [
             "*://*/*"

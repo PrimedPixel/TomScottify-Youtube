@@ -76,7 +76,7 @@ function applyOverlayToThumbnails() {
     for (let i = 0; i < loops; i++) {
       // Get overlay image URL from your directory
       const overlayImageIndex = getRandomImageFromDirectory();
-      let flip = Math.random() < 0.25; // 25% chance to flip the image
+      let flip = Math.random() < 0.5; // 50% chance to flip the image
       let overlayImageURL
       if (flip && flipBlacklist && flipBlacklist.includes(overlayImageIndex)) { // Check if the image is on the blacklist
         if (useAlternativeImages) { // Check if useAlternativeImages is true
@@ -192,6 +192,6 @@ getHighestImageIndex()
   .then(() => {
     setInterval(applyOverlayToThumbnails, 100);
     console.log(
-      "MrBeastify Loaded Successfully, " + highestImageIndex + " images detected. " + blacklistStatus
+      "Tom Scottify Loaded Successfully, " + highestImageIndex + " images detected. " + blacklistStatus
     );
   })
